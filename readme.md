@@ -11,6 +11,6 @@
 
 ![homepage screen](screenshots/mainPage.PNG)
 
-![add task screen](screenshots/addtask.PNG)
+![add task screen](screenshots/addTask.PNG)
 
-![all task screen](screenshots/alltask.PNG)
+![all task screen](screenshots/allTask.PNG)
