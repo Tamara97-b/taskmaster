@@ -15,6 +15,7 @@
 
 ![all task screen](screenshots/allTask.PNG)
 
+
 ## day tow
 Task Detail Page
  ### the requirments for this lab are :
@@ -34,3 +35,5 @@ The homepage should also contain a button to visit the Settings page, and once t
 ![walk task](screenshots/walk.PNG)
 
 ![setting page](screenshots/setting.PNG)
+
+
