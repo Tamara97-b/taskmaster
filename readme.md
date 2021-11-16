@@ -15,6 +15,7 @@
 
 ![all task screen](screenshots/allTask.PNG)
 
+
 ## day tow
 Task Detail Page
  ### the requirments for this lab are :
@@ -35,6 +36,7 @@ The homepage should also contain a button to visit the Settings page, and once t
 
 ![setting page](screenshots/setting.PNG)
 
+
 ## day three
 * create a Task class. A Task should have a title, a body, and a state. The state should be one of “new”, “assigned”, “in progress”, or “complete”.
 * Refactor your homepage to use a RecyclerView for displaying Task data. This should have hardcoded Task data for now.
@@ -42,3 +44,6 @@ The homepage should also contain a button to visit the Settings page, and once t
 Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will appropriately launch the detail page with the correct Task title displayed.
 
 ![homepage screen](screenshots/lab28.PNG)
+
+
+
