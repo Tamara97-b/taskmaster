@@ -15,6 +15,7 @@
 
 ![all task screen](screenshots/allTask.PNG)
 
+
 ## day tow
 Task Detail Page
  ### the requirments for this lab are :
@@ -35,6 +36,7 @@ The homepage should also contain a button to visit the Settings page, and once t
 
 ![setting page](screenshots/setting.PNG)
 
+
 ## day three
 * create a Task class. A Task should have a title, a body, and a state. The state should be one of “new”, “assigned”, “in progress”, or “complete”.
 * Refactor your homepage to use a RecyclerView for displaying Task data. This should have hardcoded Task data for now.
@@ -43,9 +45,14 @@ Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will
 
 ![homepage screen](screenshots/lab28.PNG)
 
+
 ## day four
 * Modify your Add Task form to save the data entered in as a Task in your local database.
 * Refactor homepage’s RecyclerView to display all Task entities in your database.
 * the description and status of a tapped task are also displayed on the detail page, in addition to the title. (Note that you can accomplish this by passing along the entire Task entity, or by passing along only its ID in the intent.)
 
 ![homepage screen](screenshots/lab29.PNG)
+
+
+
+
