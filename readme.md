@@ -42,3 +42,10 @@ The homepage should also contain a button to visit the Settings page, and once t
 Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will appropriately launch the detail page with the correct Task title displayed.
 
 ![homepage screen](screenshots/lab28.PNG)
+
+## day four
+* Modify your Add Task form to save the data entered in as a Task in your local database.
+* Refactor homepage’s RecyclerView to display all Task entities in your database.
+* the description and status of a tapped task are also displayed on the detail page, in addition to the title. (Note that you can accomplish this by passing along the entire Task entity, or by passing along only its ID in the intent.)
+
+![homepage screen](screenshots/lab29.PNG)
