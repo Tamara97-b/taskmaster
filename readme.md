@@ -54,5 +54,12 @@ Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will
 ![homepage screen](screenshots/lab29.PNG)
 
 
+## lab 32
+Using the amplify add api command, create a Task resource that replicates our existing Task schema. Update all references to the Task data to instead use AWS Amplify to access your data in DynamoDB instead of in Room.
+
+![image](screenshots/lab32.PNG)
+
+
+
 
 
