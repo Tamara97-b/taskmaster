@@ -10,14 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.amplifyframework.datastore.generated.model.Task;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
 
-    List<Task> allTask = new ArrayList<Task>();
+    List<com.amplifyframework.datastore.generated.model.Task> allTask = new ArrayList<com.amplifyframework.datastore.generated.model.Task>();
 
-    public TaskAdapter(List<Task> allTask) {
+    public TaskAdapter(List<com.amplifyframework.datastore.generated.model.Task> allTask) {
         this.allTask = allTask;
     }
 
@@ -46,13 +48,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         TextView state = holder.itemView.findViewById(R.id.stateFragment1);
         Button gotodetails =holder.itemView.findViewById(R.id.goToDetailsButton);
 
-        title.setText(holder.task.title);
-        body.setText(holder.task.body);
-        state.setText(holder.task.state);
+        title.setText(holder.task.getTitle());
+        body.setText(holder.task.getBody());
+        state.setText(holder.task.getState());
         gotodetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String taskTitle=holder.task.title;
+                String taskTitle=holder.task.getTitle();
                 Intent goToDetailsPage=new Intent(v.getContext(),TaskDetail.class);
                 goToDetailsPage.putExtra("task detail",taskTitle);
                 v.getContext().startActivity(goToDetailsPage);

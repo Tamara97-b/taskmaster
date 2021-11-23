@@ -42,3 +42,8 @@ The homepage should also contain a button to visit the Settings page, and once t
 Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will appropriately launch the detail page with the correct Task title displayed.
 
 ![homepage screen](screenshots/lab28.PNG)
+
+## lab 32
+Using the amplify add api command, create a Task resource that replicates our existing Task schema. Update all references to the Task data to instead use AWS Amplify to access your data in DynamoDB instead of in Room.
+
+![image](screenshots/lab32.PNG)
