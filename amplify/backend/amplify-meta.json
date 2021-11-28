@@ -32,12 +32,55 @@
         "GraphQLAPIEndpointOutput": "https://jrlkndji5bgnhiind6wys7nyky.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-mzjygxkirfe77ev3sapvangvqi"
       },
-      "lastPushTimeStamp": "2021-11-23T14:24:39.300Z",
+      "lastPushTimeStamp": "2021-11-28T13:51:21.814Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-taskmaster-dev-153756-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiamplifyDatasource"
       },
-      "lastPushDirHash": "Dfhn2T1j+goe/KZkhAkJMRhasF4="
+      "lastPushDirHash": "VNOzNcwP7yp/HOgwmb6+RbDsSZo="
+    }
+  },
+  "auth": {
+    "taskmasterb9d517cf": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-taskmaster-dev-153756-deployment/amplify-cfn-templates/auth/taskmasterb9d517cf-cloudformation-template.json",
+        "logicalId": "authtaskmasterb9d517cf"
+      },
+      "lastPushTimeStamp": "2021-11-28T13:51:22.274Z",
+      "output": {
+        "UserPoolId": "us-east-1_9pcOZyVIo",
+        "AppClientIDWeb": "35forct2erqmek2tumd4o5h73o",
+        "AppClientID": "3cb3qthj08ntn5okqcgkau6kp9",
+        "HostedUIDomain": "taskmasterb9d517cf-b9d517cf-dev",
+        "IdentityPoolId": "us-east-1:15bf48cb-2748-4f87-aaab-a50d4932f061",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:720595577969:userpool/us-east-1_9pcOZyVIo",
+        "IdentityPoolName": "taskmasterb9d517cf_identitypool_b9d517cf__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"myapp://callback/\"],\"LogoutURLs\":[\"myapp://signout/\"]}",
+        "UserPoolName": "taskmasterb9d517cf_userpool_b9d517cf"
+      },
+      "lastPushDirHash": "2G/XZQX8Nt/Ebtq7TSKiLdhLA7w="
     }
   }
 }

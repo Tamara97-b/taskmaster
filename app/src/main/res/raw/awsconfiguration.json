@@ -12,5 +12,54 @@
             "ApiKey": "da2-mzjygxkirfe77ev3sapvangvqi",
             "ClientDatabasePrefix": "amplifyDatasource_API_KEY"
         }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:15bf48cb-2748-4f87-aaab-a50d4932f061",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_9pcOZyVIo",
+            "AppClientId": "3cb3qthj08ntn5okqcgkau6kp9",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "WebDomain": "taskmasterb9d517cf-b9d517cf-dev.auth.us-east-1.amazoncognito.com",
+                "AppClientId": "3cb3qthj08ntn5okqcgkau6kp9",
+                "SignInRedirectURI": "myapp://callback/",
+                "SignOutRedirectURI": "myapp://signout/",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "socialProviders": [],
+            "usernameAttributes": [],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
     }
 }
