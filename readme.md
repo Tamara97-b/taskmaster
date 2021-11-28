@@ -60,6 +60,11 @@ Using the amplify add api command, create a Task resource that replicates our ex
 ![image](screenshots/lab32.PNG)
 
 
+## lab33
+![image](screenshots/lab33.PNG)
+
+
+
 
 
 
