@@ -15,6 +15,7 @@
 
 ![all task screen](screenshots/allTask.PNG)
 
+
 ## day tow
 Task Detail Page
  ### the requirments for this lab are :
@@ -35,6 +36,7 @@ The homepage should also contain a button to visit the Settings page, and once t
 
 ![setting page](screenshots/setting.PNG)
 
+
 ## day three
 * create a Task class. A Task should have a title, a body, and a state. The state should be one of “new”, “assigned”, “in progress”, or “complete”.
 * Refactor your homepage to use a RecyclerView for displaying Task data. This should have hardcoded Task data for now.
@@ -43,12 +45,23 @@ Ensure that you can tap on any one of the Tasks in the RecyclerView, and it will
 
 ![homepage screen](screenshots/lab28.PNG)
 
+
+## day four
+* Modify your Add Task form to save the data entered in as a Task in your local database.
+* Refactor homepage’s RecyclerView to display all Task entities in your database.
+* the description and status of a tapped task are also displayed on the detail page, in addition to the title. (Note that you can accomplish this by passing along the entire Task entity, or by passing along only its ID in the intent.)
+
+![homepage screen](screenshots/lab29.PNG)
+
+
 ## lab 32
 Using the amplify add api command, create a Task resource that replicates our existing Task schema. Update all references to the Task data to instead use AWS Amplify to access your data in DynamoDB instead of in Room.
 
 ![image](screenshots/lab32.PNG)
 
+
 ## lab33
+
 Tasks Are Owned By Teams
 Created a second entity for a team, which has a name and a list of tasks. Update your tasks to be owned by a team.
 
@@ -61,9 +74,17 @@ Settings Page
 In addition to a username, allow the user to choose their team on the Settings page. Use that Team to display only that team’s tasks on the homepage.
 ![image](screenshots/lab33.PNG)
 
-## lab63
+## lab36
 
 Add Cognito to your Amplify setup. Add in user login and sign up flows to your application, using Cognito’s pre-built UI as appropriate. Display the logged in user’s username somewhere relevant in your app.
 Allow users to log out of your application.
 ![image](screenshots/lab36.PNG)
+
+
+
+
+
+
+
+
 
