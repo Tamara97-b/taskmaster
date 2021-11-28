@@ -49,4 +49,21 @@ Using the amplify add api command, create a Task resource that replicates our ex
 ![image](screenshots/lab32.PNG)
 
 ## lab33
+Tasks Are Owned By Teams
+Created a second entity for a team, which has a name and a list of tasks. Update your tasks to be owned by a team.
+
+Manually create three teams by running a mutation exactly three times in your code. (You do NOT need to allow the user to create new teams.)
+
+Add Task Form
+Modified your Add Task form to include either a Spinner or Radio Buttons for which team that task belongs to.
+
+Settings Page
+In addition to a username, allow the user to choose their team on the Settings page. Use that Team to display only that team’s tasks on the homepage.
 ![image](screenshots/lab33.PNG)
+
+## lab63
+
+Add Cognito to your Amplify setup. Add in user login and sign up flows to your application, using Cognito’s pre-built UI as appropriate. Display the logged in user’s username somewhere relevant in your app.
+Allow users to log out of your application.
+![image](screenshots/lab36.PNG)
+
