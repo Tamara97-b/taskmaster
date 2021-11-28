@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         try {
@@ -115,22 +117,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonAddTask = (Button) findViewById(R.id.goToAddTask);
 
-        buttonAddTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Button Clicked", Toast.LENGTH_LONG).show();
-                // to start another activity, we will use intent
-                Intent goToOtherActivityIntent = new Intent(MainActivity.this, AddTask.class);
-                startActivity(goToOtherActivityIntent);
-            }
-        });
-        Button buttonAllTask = (Button) findViewById(R.id.goToAllTask);
 
+        Button buttonAllTask = (Button) findViewById(R.id.goToAllTask);
         buttonAllTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Button Clicked", Toast.LENGTH_LONG).show();
-                // to start another activity, we will use intent
                 Intent goToOtherActivityIntent = new Intent(MainActivity.this, AllTask.class);
                 startActivity(goToOtherActivityIntent);
             }
@@ -149,10 +141,18 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new TaskAdapter(allTask));
 
     }
+
+
+
+    }
+
+
+
 
     @Override
     protected void onResume() {
