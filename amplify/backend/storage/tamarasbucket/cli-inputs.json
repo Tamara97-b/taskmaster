@@ -1,0 +1,14 @@
+{
+  "resourceName": "tamarasbucket",
+  "policyUUID": "6fbe7287",
+  "bucketName": "taskmasterb86b39a86edf4c5fb6406115f3559e04",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

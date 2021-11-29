@@ -15,6 +15,7 @@ type Task {
   body: String
   state: String
   teamID: ID
+  fileKey: String
   _version: Int!
   _deleted: Boolean
   _lastChangedAt: AWSTimestamp!
@@ -190,6 +191,7 @@ input ModelTaskFilterInput {
   body: ModelStringInput
   state: ModelStringInput
   teamID: ModelIDInput
+  fileKey: ModelStringInput
   and: [ModelTaskFilterInput]
   or: [ModelTaskFilterInput]
   not: ModelTaskFilterInput
@@ -201,6 +203,7 @@ input CreateTaskInput {
   body: String
   state: String
   teamID: ID
+  fileKey: String
   _version: Int
 }
 
@@ -210,6 +213,7 @@ input UpdateTaskInput {
   body: String
   state: String
   teamID: ID
+  fileKey: String
   _version: Int
 }
 
@@ -223,6 +227,7 @@ input ModelTaskConditionInput {
   body: ModelStringInput
   state: ModelStringInput
   teamID: ModelIDInput
+  fileKey: ModelStringInput
   and: [ModelTaskConditionInput]
   or: [ModelTaskConditionInput]
   not: ModelTaskConditionInput
