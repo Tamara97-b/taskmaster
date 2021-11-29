@@ -2,6 +2,7 @@ package com.example.taskmaster;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -25,6 +26,7 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class AddTask extends AppCompatActivity {
+
 
     String fileName;
     Uri dataUri;
@@ -71,6 +73,8 @@ public class AddTask extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +82,7 @@ public class AddTask extends AppCompatActivity {
         Button button2 = (Button) findViewById(R.id.button2);
         Button choose =(Button) findViewById(R.id.choose);
         Button submit =(Button) findViewById(R.id.submit);
+
 
 //        Team item1 = Team.builder()
 //                .name("team1")
@@ -113,9 +118,15 @@ public class AddTask extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s.setAdapter(adapter);
 
+        EditText title = findViewById(R.id.editTitleId);
+        EditText body = findViewById(R.id.editBodyId);
+        EditText state = findViewById(R.id.editStateId);
+
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Toast.makeText(getApplicationContext(), "Task Added",Toast.LENGTH_LONG).show();
 
                 EditText taskTitle = findViewById(R.id.formOfTitle);
@@ -147,7 +158,12 @@ public class AddTask extends AppCompatActivity {
                         },
                         failure -> Log.e("Amplify", "Could not query DataStore", failure)
                 );
+
              finish();
+
+
+
+
             }
         });
 
@@ -174,3 +190,9 @@ public class AddTask extends AppCompatActivity {
         });
     }
 }
+
+
+
+
+
+
